@@ -16,8 +16,8 @@ def index(request):
     return render(request, 'pybo/question_list.html', context)
 
 def detail(request, question_id):
-    """    
-    pybo 내용 출력
+    """    a
+    pybo 내용 출력 
     """
     question = get_object_or_404(Question, pk=question_id)
     context = {'question': question}
